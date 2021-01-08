@@ -18,6 +18,7 @@ import {
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Friends from "./src/screens/Friends";
 import Test from "./src/screens/Test";
 import QRScreen from "./src/screens/QRScreen";
 
@@ -40,8 +41,8 @@ export default function App() {
     const FriendsStackScreen = () => (
         <QRStack.Navigator>
             <QRStack.Screen
-                name="ContactsList"
-                component={Test}
+                name="Friends"
+                component={Friends}
                 options={{
                    headerShown:false
                 }}
